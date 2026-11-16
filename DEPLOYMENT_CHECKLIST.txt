@@ -1,0 +1,14 @@
+STREAMLIT DEPLOYMENT CHECKLIST
+
+1. app.py is the web interface. main.py is the original terminal app.
+2. Create a cloud MySQL-compatible database and run schema.sql there.
+3. Create a MongoDB Atlas cluster and allow network access from Streamlit Cloud (Atlas IP access setting).
+4. Create a GitHub repository and upload the project files. Do NOT upload .env or passwords.
+5. Deploy app.py on Streamlit Community Cloud.
+6. Add MYSQL_HOST, MYSQL_PORT, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE, MONGO_URI, and MONGO_DATABASE in Streamlit app Secrets.
+7. Test database connection, add/view a test student, and generate the combined report.
+
+Security:
+- Never paste database passwords into chat or source code.
+- Use unique strong database passwords.
+- Restrict database permissions to the minimum needed.
